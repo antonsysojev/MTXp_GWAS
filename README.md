@@ -11,3 +11,9 @@ Some of the underlying scripts from the `misc` folder have not been made publicl
 All bash scripts and their underlying R scripts were built to be ran on a Linux machine, using default command-line tools as well as PLINK1.9, PLINK2 and R (4.3.1).
 
 # 2. DATA
+
+Public data made available here, is located at ´data/public´. This folder contains the primary RA GWAS, the seropositive RA GWAS and the seronegative RA GWAS for the two persistence phenotypes of persistence to treatment with methotrexate at one and three years, respectively (see Sysojev et al. (2023) for further details). All GWAS files are available in tab-separated format with variables according to what is requested by the GWAS Catalog.
+
+Associated .xlsx-files give further details on the GWAS contents in a tabular format requested by the GWAS Catalog. Files with the `.md5sum` extension contains the ouput of an `md5sum` call in Linux, the same information being reported within the directory README.
+
+The GWAS data from the meta-analysis of the primary RA GWASs pooled with the supplementary data will be made available shortly.
