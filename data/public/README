@@ -1,0 +1,8 @@
+### FOLDER CONTENTS README
+### LAST UPDATED AUG 24 2023 BY
+### ANTON ÖBERG SYSOJEV
+### anton.oberg.sysojev@ki.se
+
+This folder contains the multiple GWAS summary statistics presented in `Sysojev et al. (2023)` on the two phenotypes of 'persistence to treamtent with methotrexate' at 1 and 3 years, respectively, in a population of Swedish early RA patients.
+Further details on the population, the phenotype, as well as the genotyping and quality control of the data, can be found in the original publication.
+Questions and requests regarding the data should be addressed to the first author of the original publication, either via e-mail (anton.oberg.sysojev@ki.se) or their GitHub page (https://github.com/antonsysojev).
