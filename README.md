@@ -1,6 +1,6 @@
 # GWAS on persistence to treatment with MTX, in a Swedish population of early RA patients
 
-This repository hosts scripts and relevant files related to the study described in Sysojev et al. (2023). It also contains various forms of cleaned GWAS summary statistic data produced in the project, made publicly available here as well as on the GWAS Catalog (https://www.ebi.ac.uk/gwas/). However, it _does not_ contain any types of raw data used within the project.
+This repository hosts scripts and relevant files related to the study described in Sysojev et al. (2023). It also contains links to the various forms of cleaned GWAS summary statistic data produced in the project, made publicly available through the GWAS Catalog (https://www.ebi.ac.uk/gwas/). However, it _does not_ contain any types of raw data used within the project.
 
 # 1. SCRIPTS
 
@@ -12,8 +12,4 @@ All bash scripts and their underlying R scripts were built to be ran on a Linux 
 
 # 2. DATA
 
-Public data made available here, is located at ´data/public´. This folder contains the primary RA GWAS, the seropositive RA GWAS and the seronegative RA GWAS for the two persistence phenotypes of persistence to treatment with methotrexate at one and three years, respectively (see Sysojev et al. (2023) for further details). All GWAS files are available in tab-separated format with variables according to what is requested by the GWAS Catalog.
-
-Associated .xlsx-files give further details on the GWAS contents in a tabular format requested by the GWAS Catalog. Files with the `.md5sum` extension contains the ouput of an `md5sum` call in Linux, the same information being reported within the directory README.
-
-The GWAS data from the meta-analysis of the primary RA GWASs pooled with the supplementary data will be made available shortly.
+Due to storage limitations, no GWAS summary statistic data could be made available here, i.e. through this GitHub page. However, data hosting via the GWAS Catalog (https://www.ebi.ac.uk/gwas/) allows data to be made available elsewhere, easily accessible via link. The two primary GWASs, on persistence to treatment with MTX in DMARD-monotherapy at one and three years, as well as the GWASs on the same outcomes within subcohorts of seropositive and seronegative RA patients, can be found there. However, the meta-analysis GWAS described under the `Supplementary Analysis` is not currently hosted at the same place due to formating issues, but can be made available at reasonable request.
