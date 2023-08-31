@@ -1,5 +1,5 @@
 #!/user/bin/env Rscript
-### LAST VERSION UPDATE 13 JULY 2023 (v2.0) - NOW WORKS WITHIN THE `7'.sh` PIPELINE
+### LAST VERSION UPDATE AUG 31 2023 (v2.1.2) - FIXED AN ISSUE WITH THE GWAS CATALOG VALIDATION, NOW CUTS ALL SNPS WITH A NON-ALPHABETIC ALLELE
 ### THIS SCRIPT CLEANS THE GWAS DATA FOR ONLINE PUBLICATION
 
 .libPaths("/home2/genetics/antobe/software/RLibrary/")
@@ -31,16 +31,17 @@ if(!str_detect(GWAS, "META")){
 	SNP <- read_tsv("/home2/genetics/antobe/data/EIRA-SRQB/SNP-ID_linkage.txt", col_names = c("ID", "RSNO"), show_col_types = F) %>% mutate(variant_id = str_replace_all(ID, "\\:", "_")) %>% select(variant_id, RSNO)
 
 
-	GWAS_df_clean <- GWAS_df %>% head() %>% mutate(chromosome = `#CHROM`, base_pair_location = POS) %>%
+	GWAS_df_clean <- GWAS_df %>% mutate(chromosome = `#CHROM`, base_pair_location = POS) %>%
 	  mutate(effect_allele = ALT, other_allele = REF) %>%
 	  mutate(beta = log(OR), standard_error = `LOG(OR)_SE`, p_value = P) %>%
 	  mutate(variant_id = str_replace_all(ID, "\\:", "_"), n = OBS_CT) %>%
 	  inner_join(FREQ, by = "variant_id") %>% 
 	  inner_join(SNP, by = "variant_id") %>%
-	  select(chromosome, base_pair_location, effect_allele, other_allele, beta, standard_error, p_value, variant_id, n)
+	  select(chromosome, base_pair_location, effect_allele, other_allele, beta, standard_error, effect_allele_frequency = ALT_FREQS, p_value, variant_id, n, rs_id = RSNO)
 
 }
 
+GWAS_df_clean <- GWAS_df_clean %>% filter(!str_detect(effect_allele, "[^A-Z]")) %>% filter(!str_detect(other_allele, "[^A-Z]")) %>% mutate(base_pair_location = as.integer(base_pair_location))    #AD-HOC SOLUTION TO MAKE THE FILE PASS THROUGH THE `gwas-ssf validate` ISSUE
 write.table(GWAS_df_clean, str_c("TMP/tmp-7/", GWAS, ".tsv"), col.names = T, row.names = F, quote = F, sep = "\t")
 
 ### TO DO:
