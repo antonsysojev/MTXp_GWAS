@@ -14,11 +14,14 @@ All bash scripts and their underlying R scripts were built to be ran on a Linux 
 
 Due to storage limitations, no GWAS summary statistic data could be made available here, i.e. through this GitHub page. However, data hosting via the GWAS Catalog ([https://www.ebi.ac.uk/gwas/](https://www.ebi.ac.uk/gwas/publications/37326842)) allows data to be made available elsewhere, easily accessible via link. The two primary GWASs, on persistence to treatment with MTX in DMARD-monotherapy at one and three years, as well as the GWASs on the same outcomes within subcohorts of seropositive and seronegative RA patients, can be found there. However, the meta-analysis GWAS described under the `Supplementary Analysis` is not currently hosted at the same place due to formating issues, but can be made available at reasonable request. Direct links to FPT-folders hosting the various GWASs can be found below.
 
-[Summary statistics from the GWAS on persistence to MTX, at one year](http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90281001-GCST90282000/GCST90281046/).
-[Summary statistics from the GWAS on persistence to MTX, at three years](http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90281001-GCST90282000/GCST90281047/).
+- [Summary statistics from the GWAS on persistence to MTX, at one year](http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90281001-GCST90282000/GCST90281046/).
 
-[Summary statistics from the GWAS on persistence to MTX, at one year, in seropositive RA patients](http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90281001-GCST90282000/GCST90281048/).
-[Summary statistics from the GWAS on persistence to MTX, at three years, in seropositive RA patients](http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90281001-GCST90282000/GCST90281049/).
+- [Summary statistics from the GWAS on persistence to MTX, at three years](http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90281001-GCST90282000/GCST90281047/).
 
-[Summary statistics from the GWAS on persistence to MTX, at one year, in seronegative RA patients](http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90281001-GCST90282000/GCST90281050/).
-[Summary statistics from the GWAS on persistence to MTX, at three years, in seronegative RA patients](http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90281001-GCST90282000/GCST90281051/).
+- [Summary statistics from the GWAS on persistence to MTX, at one year, in seropositive RA patients](http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90281001-GCST90282000/GCST90281048/).
+
+- [Summary statistics from the GWAS on persistence to MTX, at three years, in seropositive RA patients](http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90281001-GCST90282000/GCST90281049/).
+
+- [Summary statistics from the GWAS on persistence to MTX, at one year, in seronegative RA patients](http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90281001-GCST90282000/GCST90281050/).
+
+- [Summary statistics from the GWAS on persistence to MTX, at three years, in seronegative RA patients](http://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90281001-GCST90282000/GCST90281051/).
