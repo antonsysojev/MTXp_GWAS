@@ -1,6 +1,6 @@
 # GWAS on persistence to treatment with MTX, in a Swedish population of early RA patients
 
-This repository hosts scripts and relevant files related to the study described in Sysojev et al. (2023). It also contains links to the various forms of cleaned GWAS summary statistic data produced in the project, made publicly available through the GWAS Catalog ([https://www.ebi.ac.uk/gwas/](https://www.ebi.ac.uk/gwas/publications/37326842)). However, it _does not_ contain any types of raw data used within the project.
+This repository hosts scripts and relevant files related to the study described in [Sysojev et al. (2023)](https://pubmed-ncbi-nlm-nih-gov.proxy.kib.ki.se/37326842/). It also contains links to the various forms of cleaned GWAS summary statistic data produced in the project, made publicly available through the GWAS Catalog ([https://www.ebi.ac.uk/gwas/](https://www.ebi.ac.uk/gwas/publications/37326842)). However, it _does not_ contain any types of raw data used within the project.
 
 # 1. SCRIPTS
 
